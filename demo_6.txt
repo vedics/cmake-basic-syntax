@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 3.10) #指定版本
+
+
+project(main) #工程名称
+
+
+set(PROJECT_LINK_LIBS libarmor.so) #将库文件存到变量中
+
+#set(PROJECT_LINK_LIBS libarmor.a)
+
+
+link_directories(/home/wenda/cmake/demo_4/build) #添加外部库的搜索路径
+
+#link_directories(/home/wenda/cmake/demo_5/build)
+
+
+include_directories(../demo_4/include) #包含库对应的头文件
+
+#include_directories(../demo_5/include)
+
+
+add_executable(main main.cpp)
+
+
+target_link_libraries(main ${PROJECT_LINK_LIBS}) #链接外部库文件

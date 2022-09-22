@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10) #指定版本号
+
+
+project(main) #工程名称
+
+
+add_executable(main main.cpp) #把源文件生成可执行文件

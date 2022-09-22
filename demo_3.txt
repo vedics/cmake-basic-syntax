@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.10) #指定版本
+
+
+project(main) #工程名称
+
+
+include_directories(include) #添加头文件目录
+
+
+#set(SOURCE main.cpp input_A.cpp input_B.cpp) #源文件
+
+
+file(GLOB SOURCE "src/*.cpp" "main.cpp") #源文件
+
+
+add_executable(main ${SOURCE}) #把源文件生成可执行文件

@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.10) #指定版本
+
+
+project(main) #工程名称
+
+
+aux_source_directory(. dir_srcs) #将目录下的所有源文件存到变量中
+
+
+add_executable(main ${dir_srcs}) #把源文件生成可执行文件
