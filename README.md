@@ -1,3 +1,5 @@
+# 注意
+在使用时将文件名改为CMakeLists.txt
 # cmake
 
 All problems in computer science can be solved by another level of indirection.
@@ -15,7 +17,7 @@ Cmake就是针对这一问题，通过编写CMakeLists.txt文件来制定编译�
 
     2.cmake
 
-    3.make
+    3.make -j $(nproc)
 
 
 # 常用语法：
